@@ -384,12 +384,6 @@ function arrow_right_animation(){
 
 
 
-function about_moving(){
-  tl_repeat.fromTo(div_about,35,{x:0,y:0},{x:-60,y:30});
-  tl_repeat.fromTo(div_about,35,{x:-60,y:30},{x:0,y:0});
-
-};
-
 
 foreign_button_pokaz.addEventListener('click',() =>{
   if(div_pokaz_projekty_all.classList.contains("showed")){
@@ -720,5 +714,4 @@ div_ico_arrow1.addEventListener('click',function (div_ico_arrow1){
   }
 
 })
-about_moving();
 changing_color_of_about();

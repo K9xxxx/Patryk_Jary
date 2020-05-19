@@ -25,17 +25,18 @@ body{
 }
 
 .logoPJ svg{
-  height:60%;
-  width:60%;
-  margin-top:-5%;
+  height:50%;
+  width:50%;
+  margin-top: 0;
 }
-
 .about{
   width:50%;
   position:absolute;
   right:0px;
   top:100px;
-
+}
+.about.mb{
+  display:none;
 }
 .about-letters{
   font-size:0;
@@ -90,9 +91,7 @@ body{
 .letter.web{
   font-size:30px;
 }
-.letter.web:hover{
-  font-size:30px;
-}
+
 .letter.sp{
   padding-right:10px;
 }
@@ -884,491 +883,238 @@ select:-webkit-autofill:focus {
   }
 }
 
-
 @media only screen and (max-width: 1440px){
-  /* First Section */
-  .presentation{
-    min-height:100vh;
-    width:100%;
-  }
-
-
-  .about{
+  .logoPJ svg{
+    height:50%;
     width:50%;
-    right:0px;
-    top:100px;
-  }
-  .about-letters{
-    font-size:0;
+    margin-top:0;
   }
   .about p{
-    margin-right: 3px;
-    font-size:60px;
-    height:auto;
-    width:auto;
-
+    font-size:50px;
   }
-
   .letter.web{
-    font-size:30px;
+    font-size:25px;
   }
-  .letter.web:hover{
-    font-size:30px;
-  }
-  .letter.sp{
-    padding-right:10px;
-  }
+
   .third{
-    margin-right: 170px;
+    float:right;
+    margin-right: 5%;
+  }
+}
+
+@media only screen and (max-width: 1215px){
+  .logoPJ svg{
+    height:50%;
+    width:50%;
+    margin-top:2%;
+    margin-left:-4%;
   }
 
-  /* Secound Section */
-  .more-about{
-    height:130vh;
-  }
-
-  .more-about-active{
-      height: 195vh;
-  }
-
-
-  .info-about-me{
-    margin:5% 0 0 8%;
-    width:61%;
-    -webkit-background-size:115px;
-    background-size:115px;
-  }
-
-  .about-websites{
-    margin: 5% 5% 0 0;
-    width:61%;
-    -webkit-background-size:115px;
-    background-size:115px;
-
-  }
-  article > p{
-    font-size:22px;
-  }
-
-
-
-
-  article > h3{
-    font-size:42px;
-    margin:0 0 30px -70px;
-  }
-
-  .pokaz-projekty-all{
-    margin-top:25%;
-    margin-left:5%;
-    margin-right:5%;
-    height:90vh;
-  }
-
-  #svg-circ-1 {
-    stroke-width: 2;
-    stroke-dasharray: 255%;
-    top:-25%;
-    left:0;
-  }
-  #svg-circ-2 {
-    stroke-width: 2;
-    stroke-dasharray: 100%;
-    top:-25%;
-    left:0;
-  }
-  #svg-circ-3 {
-    stroke-width: 2;
-    stroke-dasharray: 197%;
-    top:-25%;
-    left:0;
-  }
-  #svg-circ-4 {
-    stroke-width: 2;
-    stroke-dasharray: 100%;
-    top:-25%;
-    left:0;
-  }
-  #svg-circ-5 {
-    stroke-width: 2;
-    stroke-dasharray: 140%;
-    top:-25%;
-    left:0;
-  }
-  #svg-circ-6 {
-    stroke-width: 2;
-    stroke-dasharray: 30%;
-    top:-25%;
-    left:0;
-  }
-  #svg-circ-7 {
-    stroke-width: 2;
-    stroke-dasharray: 15.3%;
-    top:-25%;
-    left:0;
-  }
-  #svg-circ-8 {
-    stroke-width: 2;
-    stroke-dasharray: 7.6%;
-    top:-25%;
-    left:0;
-  }
-  #svg-circ-none{
-    top:-25%;
-    left:0;
-  }
-
-  .button-pokaz-projekty{
-    min-height:600px;
-    width: 900px;
-  }
-  .pokaz-projekty{
-    padding: 18px 4px;
-    margin-top:61px;
-    margin-left:61px;
-    letter-spacing:0.5px;
-    font-size:18px;
-  }
-
-  #projects{
-    border-radius:10px;
-    width:80%;
-    height:32em;
-    margin:7% 0 5% 19%;
-  }
-  #square{
-    top:0;
-    left:0;
-    width:100%;
-    height:34em;
-  }
-  #top-side,
-  #right-side,
-  #bottom-side,
-  #left-side{
-    width:0px;
-    height:0px;
-  }
-  #left-side{
-    left:0;
-    top:0;
-    height:34em;
-    width:5px;
-  }
-  #top-side{
-    top:0;
-    left:0;
-    width:57%;
-    height:5px;
-  }
-  #right-side{
-    right:0;
-    top:0;
-    height:34em;
-    width:5px;
-  }
-  #bottom-side{
-    bottom:0;
-    left:0;
-    width:57%px;
-    height:5px;
-  }
-  .my-projects{
-    width:90%;
-    height:32em;
-    left:50px;
-  }
-
-  .tittle-of-project{
-    margin:5px 5px 6px 5px;
-    height:5em;
-  }
-  .tittle-of-project h1{
-    font-size:33px;
-    letter-spacing: 2px;
-  }
-
-  .img-of-project{
-    height:25.9em;
-    margin:6px 5px 5px 5px;
-  }
-  .img-of-project > img{
-    top:2px;
-    left:1.5px;
-    width:100%;
-    height:100%;
-  }
-
-  .div-arrows{
-    bottom:0;
-    height:4em;
-    width:987px;
-    margin-bottom:-30px;
-  }
-  .background-arrow{
-    width:9em;
-    height:100%;
-    margin:0 auto;
-    padding-top:10px;
-  }
-  .left-arrow{
-    border:3px solid hsl(0,0%,40%);
-    height:2.7em;
-    width:2.7em;
-    margin-left:5%;
-    margin-top:0%;
-  }
-
-  .right-arrow{
-    border:3px solid hsl(0,0%,40%);
-    height:2.7em;
-    width:2.7em;
-    margin-right:5%;
-  }
-  .icofont-arrow-left{
-    font-size:38px;
-  }
-  .icofont-arrow-right{
-    font-size:38px;
-  }
-
-
-  .skills{
-    height:100vh;
-  }
-  .skills-all-content{
-    height:100%;
-    width:100%;
-    padding-top:5%;
-    padding-bottom:5%;
-    transform: translateY(100px);
-  }
-  .skills-banner{
-    height:100%;
-    width:5%;
-    margin:0% 0% 5% 7%;
-  }
-  .skills-banner-letter{
-    font-size:70px;
-    line-height: 160%;
-  }
-
-  .skills-border{
-    height:100%;
-    width:80%;
-    margin-left:2%;
-    margin:right:5%;
-  }
-  .skill{
+  .about{
     width:60%;
-    height:12%;
-    margin-bottom:0.5%;
-  }
-
-  .skill.left .over-border-div{
-    margin-left:2%;
-  }
-
-
-  .over-border-div{
-    margin-left:-3%;
-  }
-  .over-border-div > h4{
-    font-size:140%;
-  }
-
-  .js-percentage{
-    right:20%;
-  }
-  .htmlcss-percentage{
-    right:14.5%
-  }
-  .gsap-percentage{
-    right:10%;
-  }
-  .scrollmagic-percentage{
-    right:34%;
-  }
-  .over-border-div  .rwd-percentage{
-    right:0%;
-    font-size:200%;
-  }
-  .git-percentage{
-    right:4.5%;
-  }
-  .gimp-percentage{
-    right:61%;
-  }
-
-
-
-  .my-skills{
-    height:100%;
-    width:100%;
-    padding:2% 10%;
-  }
-  .skill-letter{
-    font-size:200%;
-  }
-  .skill-letter.rwd{
-    font-size:230%;
-    line-height:0%;
-  }
-  .skill.left.rwd{
-    height:21%;
-    font-size:70%;
-  }
-  .skill.left.rwd .my-skill-border{
-    height:11.3%;
-  }
-  .skill.left{
-    margin-left:0%;
-  }
-  .skill.right{
-    margin-left:0%;
-  }
-  .skill.right .my-skill-border{
-    margin-left: -5%;
-  }
-  .my-skill-border{
-    width:100%;
-    height:19.7%;
-    border-radius: 15px;
-    transform: scaleX(0);
-  }
-
-  .contact-section{
-    height:130vh;
-  }
-
-  .contact-all-content{
-    width:65%;
-    margin:0 auto;
-    padding-top:5%;
-  }
-
-  .contact-banner{
-    font-size:60px;
-    margin-bottom:5%;
-    letter-spacing: 5px;
-  }
-
-
-  .name-box{
-    width:50%;
-    margin-left:30%;
-  }
-  .name-box>input{
-    width:100%;
-    padding:13px 0;
-    font-size:19px;
-    margin-bottom:15px;
-    border:none;
-    border-bottom:1px solid #fff;
-  }
-  .mail-box>input{
-    width:100%;
-    padding:13px 0;
-    font-size:19px;
-    margin-bottom:15px;
-    border:none;
-    border-bottom:1px solid #fff;
-    border-bottom-right-radius: 5px;
-  }
-
-
-  .message-box>textarea{
-    width:90%;
-    padding:13px 0;
-    font-size:19px;
-    margin-bottom:15px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-  }
-  .name-box input:focus~ label,
-  .name-box input:valid~ label,
-  .mail-box input:focus~ label,
-  .mail-box input:valid~ label,
-  .message-box textarea:focus~ label,
-  .message-box textarea:valid~ label{
-    top:-20px;
-    left:0;
-    font-size:12px;
-  }
-  input:-webkit-autofill,
-  input:-webkit-autofill:hover,
-  input:-webkit-autofill:focus,
-  textarea:-webkit-autofill,
-  textarea:-webkit-autofill:hover,
-  textarea:-webkit-autofill:focus,
-  select:-webkit-autofill,
-  select:-webkit-autofill:hover,
-  select:-webkit-autofill:focus {
-    -webkit-box-shadow: 0 0 0px 1000px hsl(0,0%,8%)  inset;
-  }
-  .name-box>label{
     position:absolute;
-    top:0;
-    left:0;
-    padding:13px 0;
-    font-size:19px;
+    right:0px;
+    top:150px;
   }
-  .mail-box>label{
-    position:absolute;
-    top:0;
-    left:0;
-    padding:13px 0;
-    font-size:19px;
+  .about p{
+    font-size:50px;
   }
-  .mail-box{
-    width:50%;
-    margin-left:30%;
+  .letter.web{
+    font-size:25px;
   }
 
-  .message-box>label{
-    font-size:19px;
+  .third{
+    float:right;
+    margin-right: 5%;
   }
-  .contact-box form a{
-    padding:20px 70px;
-    font-size:19px;
-    letter-spacing:4px;
+
+  .presentation{
+    min-height:90vh;
+  }
+}
+
+@media only screen and (max-width: 1015px){
+
+  .presentation{
+    min-height:90vh;
+  }
+  .logoPJ svg{
+    height:50%;
+    width:50%;
     margin-top:2%;
   }
-  .contact-box a:hover{
-    border-radius:5px;
-    box-shadow:0 0 5px cyan,
-    0 0 25px cyan,
-    0 0 50px cyan,
-    0 0 100px cyan;
+
+  .about{
+    width:60%;
+    position:absolute;
+    right:0px;
+    top:250px;
+  }
+  .about p{
+    font-size:40px;
+  }
+  .letter.web{
+    font-size:20px;
   }
 
-  .contact-box a span:nth-child(1){
-    top:0;
-    left:-100%;
-    width:100%;
-    height:2px;
+  .third{
+    float:right;
+    margin-right: 5%;
   }
 
+}
 
-  .contact-box a span:nth-child(2){
-    top:-100%;
-    right:0%;
-    width:2px;
-    height:100%;
+@media only screen and (max-width: 820px){
+
+  .presentation{
+    min-height:90vh;
+  }
+  .logoPJ svg{
+    height:50%;
+    width:50%;
+    margin-top:2%;
   }
 
-
-  .contact-box a span:nth-child(3){
-    bottom:0;
-    right:-100%;
-    width:100%;
-    height:2px;
+  .about{
+    width:70%;
+    position:absolute;
+    right:0px;
+    top:280px;
+  }
+  .about p{
+    font-size:40px;
+  }
+  .letter.web{
+    font-size:20px;
   }
 
-  .contact-box a span:nth-child(4){
-    bottom:-100%;
-    left:0;
-    width:2px;
-    height:100%;
+  .letter.sp{
+    padding-right:8px;
   }
+
+  .third{
+    float:right;
+    margin-right: 5%;
+  }
+
+}
+
+@media only screen and (max-width: 695px){
+
+  .presentation{
+    min-height:100vh;
+  }
+  .logoPJ{
+    display:block;
+  }
+  .logoPJ svg{
+    height:60%;
+    width:60%;
+    margin-left:20%;
+    margin-top:2%;
+  }
+
+  .about{
+    display:block;
+    width:90%;
+    position:relative;
+    margin-left:10%;
+    margin-top:-20%;
+    top:none;
+  }
+  .about p{
+    font-size:40px;
+  }
+  .letter.web{
+    font-size:20px;
+  }
+
+  .letter.sp{
+    padding-right:8px;
+  }
+
+  .third{
+    float:right;
+    margin-right: 5%;
+  }
+
+}
+
+@media only screen and (max-width: 545px){
+
+  .presentation{
+    min-height:100vh;
+  }
+  .logoPJ{
+    display:block;
+  }
+  .logoPJ svg{
+    height:60%;
+    width:60%;
+    margin-left:20%;
+    margin-top:2%;
+  }
+
+  .about{
+    display:block;
+    width:90%;
+    position:relative;
+    margin-left:10%;
+    margin-top:-40%;
+    top:none;
+  }
+  .about p{
+    font-size:35px;
+  }
+  .letter.web{
+    font-size:17px;
+  }
+
+  .letter.sp{
+    padding-right:8px;
+  }
+
+  .third{
+    float:right;
+    margin-right: 5%;
+  }
+
+}
+
+@media only screen and (max-width:480px){
+
+  .presentation{
+    min-height:100vh;
+  }
+  .logoPJ{
+    display:block;
+  }
+  .logoPJ svg{
+    height:60%;
+    width:60%;
+    margin-left:20%;
+    margin-top:2%;
+  }
+
+  .about.desk{
+    display:none;
+  }
+  .about.mb{
+    display:block;
+  }
+  .about p{
+    font-size:35px;
+  }
+  .letter.web{
+    font-size:17px;
+  }
+
+  .letter.sp{
+    padding-right:8px;
+  }
+
+  .third{
+    float:left;
+  }
+
 }
