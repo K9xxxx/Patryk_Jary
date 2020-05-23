@@ -130,8 +130,8 @@ body{
   background-size:115px;
   -webkit-background-clip:text;
   animation: animate 9s infinite;
-  font-family: 'Raleway Dots', cursive;
-  font-weight:700;
+  font-family: 'Michroma', sans-serif;
+  font-weight: 400;
 }
 
 
@@ -156,8 +156,8 @@ body{
   -webkit-background-clip:text;
   animation-delay: 1.18s;
   z-index:4;
-  font-family: 'Raleway Dots', cursive;
-  font-weight:700;
+  font-family: 'Michroma', sans-serif;
+  font-weight: 400;
 }
 article > p{
   font-size:22px;
@@ -589,8 +589,8 @@ article > h3{
   font-size:200%;
   color:white;
   text-shadow:-1px -1px 2px gray;
-  font-family: 'Raleway Dots', cursive;
-  font-weight: 700;
+  font-family: 'Michroma', sans-serif;
+  font-weight: 400;
 }
 .skill-letter.rwd{
   font-size:230%;
@@ -1620,11 +1620,11 @@ article > h3{
     z-index:99;
   }
   .more-about{
-    height:1375px;
+    height:1475px;
   }
 
   .more-about-active{
-    height: 1800px;
+    height: 2000px;
   }
 
 }
