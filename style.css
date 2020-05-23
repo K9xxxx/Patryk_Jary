@@ -130,7 +130,7 @@ body{
   background-size:115px;
   -webkit-background-clip:text;
   animation: animate 9s infinite;
-  font-family: 'Michroma', sans-serif;
+  font-family: 'Balsamiq Sans', cursive;
   font-weight: 400;
 }
 
@@ -156,7 +156,7 @@ body{
   -webkit-background-clip:text;
   animation-delay: 1.18s;
   z-index:4;
-  font-family: 'Michroma', sans-serif;
+  font-family: 'Balsamiq Sans', cursive;
   font-weight: 400;
 }
 article > p{
