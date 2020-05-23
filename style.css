@@ -1070,6 +1070,46 @@ article > h3{
 .message-box{
   position:relative;
 }
+.contact-banner{
+  font-size:40px;
+  margin-bottom:5%;
+  letter-spacing: 5px;
+}
+.name-box{
+  width:100%;
+  margin-left:15%;
+}
+.mail-box{
+  width:100%;
+  margin-left:15%;
+}
+.message-box>textarea{
+  width:110%;
+  margin-left:-5%;
+}
+
+.name-box>input{
+  width:65%;
+  padding:13px 0;
+  font-size:19px;
+  margin-bottom:15px;
+
+}
+.mail-box>input{
+  width:65%;
+  padding:13px 0;
+  font-size:19px;
+  border-top:none;
+  border-left:none;
+  border-right:none;
+}
+
+.contact-box form a{
+  padding:20px 70px;
+  font-size:19px;
+  margin-top:2%;
+}
+
 
 
 }
@@ -1080,6 +1120,71 @@ article > h3{
 
 .more-about-active{
     height: 1500px;
+  }
+  .contact-banner{
+    text-align: center;
+    font-size:60px;
+    color:cyan;
+    margin-bottom:5%;
+    letter-spacing: 5px;
+    text-shadow:0 0 12px cyan;
+    font-family: 'Akronim', sans-serif;
+    font-weight:200;
+    user-select: none;
+  }
+  .name-box{
+    width:50%;
+    text-align:left;
+    margin-left:30%;
+    position:relative;
+  }
+  .mail-box{
+    position:relative;
+    width:50%;
+    text-align:left;
+    margin-left:30%;
+  }
+  .message-box{
+    position:relative;
+  }
+  .contact-banner{
+    font-size:40px;
+    margin-bottom:5%;
+    letter-spacing: 5px;
+  }
+  .name-box{
+    width:100%;
+    margin-left:15%;
+  }
+  .mail-box{
+    width:100%;
+    margin-left:15%;
+  }
+  .message-box>textarea{
+    width:110%;
+    margin-left:-5%;
+  }
+
+  .name-box>input{
+    width:65%;
+    padding:13px 0;
+    font-size:19px;
+    margin-bottom:15px;
+
+  }
+  .mail-box>input{
+    width:65%;
+    padding:13px 0;
+    font-size:19px;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+  }
+
+  .contact-box form a{
+    padding:20px 70px;
+    font-size:19px;
+    margin-top:2%;
   }
 }
 
@@ -1186,6 +1291,46 @@ article > h3{
   }
   .skill.left.rwd .my-skill-border{
     height:13px;
+  }
+
+  .contact-banner{
+    font-size:40px;
+    margin-bottom:5%;
+    letter-spacing: 5px;
+  }
+  .name-box{
+    width:100%;
+    margin-left:13%;
+  }
+  .mail-box{
+    width:100%;
+    margin-left:13%;
+  }
+  .message-box>textarea{
+    width:110%;
+    margin-left:-5%;
+  }
+
+  .name-box>input{
+    width:70%;
+    padding:13px 0;
+    font-size:19px;
+    margin-bottom:15px;
+
+  }
+  .mail-box>input{
+    width:70%;
+    padding:13px 0;
+    font-size:19px;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+  }
+
+  .contact-box form a{
+    padding:20px 70px;
+    font-size:19px;
+    margin-top:2%;
   }
 }
 
@@ -1322,6 +1467,45 @@ article > h3{
     height:700px;
     padding:2% 10%;
     padding-top:8%;
+  }
+  .contact-banner{
+    font-size:40px;
+    margin-bottom:5%;
+    letter-spacing: 5px;
+  }
+  .name-box{
+    width:100%;
+    margin-left:7%;
+  }
+  .mail-box{
+    width:100%;
+    margin-left:7%;
+  }
+  .message-box>textarea{
+    width:110%;
+    margin-left:-5%;
+  }
+
+  .name-box>input{
+    width:75%;
+    padding:13px 0;
+    font-size:19px;
+    margin-bottom:15px;
+
+  }
+  .mail-box>input{
+    width:75%;
+    padding:13px 0;
+    font-size:19px;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+  }
+
+  .contact-box form a{
+    padding:20px 70px;
+    font-size:19px;
+    margin-top:2%;
   }
 }
 
@@ -1481,6 +1665,45 @@ article > h3{
     height:700px;
     padding:2% 10%;
     padding-top:14%;
+  }
+  .contact-banner{
+    font-size:40px;
+    margin-bottom:5%;
+    letter-spacing: 5px;
+  }
+  .name-box{
+    width:100%;
+    margin-left:6%;
+  }
+  .mail-box{
+    width:100%;
+    margin-left:6%;
+  }
+  .message-box>textarea{
+    width:110%;
+    margin-left:-5%;
+  }
+
+  .name-box>input{
+    width:80%;
+    padding:13px 0;
+    font-size:19px;
+    margin-bottom:15px;
+
+  }
+  .mail-box>input{
+    width:80%;
+    padding:13px 0;
+    font-size:19px;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+  }
+
+  .contact-box form a{
+    padding:20px 70px;
+    font-size:19px;
+    margin-top:2%;
   }
 }
 
@@ -1681,6 +1904,45 @@ article > h3{
     padding-right:0px;
     width:110%;
   }
+  .contact-banner{
+    font-size:40px;
+    margin-bottom:5%;
+    letter-spacing: 5px;
+  }
+  .name-box{
+    width:100%;
+    margin-left:4%;
+  }
+  .mail-box{
+    width:100%;
+    margin-left:4%;
+  }
+  .message-box>textarea{
+    width:110%;
+    margin-left:-5%;
+  }
+
+  .name-box>input{
+    width:85%;
+    padding:13px 0;
+    font-size:19px;
+    margin-bottom:15px;
+
+  }
+  .mail-box>input{
+    width:85%;
+    padding:13px 0;
+    font-size:19px;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+  }
+
+  .contact-box form a{
+    padding:20px 70px;
+    font-size:19px;
+    margin-top:2%;
+  }
 
 }
 
@@ -1806,30 +2068,17 @@ article > h3{
   }
 
   .contact-banner{
-    text-align: center;
     font-size:40px;
-    color:cyan;
     margin-bottom:5%;
     letter-spacing: 5px;
-    text-shadow:0 0 12px cyan;
-    font-family: 'Akronim', sans-serif;
-    font-weight:200;
-    user-select: none;
   }
   .name-box{
-    width:80%;
-    text-align:left;
-    margin-left:10%;
-    position:relative;
+    width:100%;
+    margin-left:0%;
   }
   .mail-box{
-    position:relative;
-    width:80%;
-    text-align:left;
-    margin-left:10%;
-  }
-  .message-box{
-    position:relative;
+    width:100%;
+    margin-left:0%;
   }
   .message-box>textarea{
     width:110%;
@@ -1840,25 +2089,22 @@ article > h3{
     width:100%;
     padding:13px 0;
     font-size:19px;
-    color:white;
     margin-bottom:15px;
-    border:none;
-    border-bottom:1px solid #fff;
-    border-right-color: #fff;
-    border-bottom-right-radius: 5px;
 
   }
   .mail-box>input{
     width:100%;
     padding:13px 0;
     font-size:19px;
-    border:none;
-    border-bottom:1px solid #fff;
-    border-right-color: #fff;
-    border-bottom-right-radius: 5px;
     border-top:none;
     border-left:none;
     border-right:none;
+  }
+
+  .contact-box form a{
+    padding:20px 70px;
+    font-size:19px;
+    margin-top:2%;
   }
 
 }
