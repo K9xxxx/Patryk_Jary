@@ -1008,7 +1008,7 @@ article > h3{
 
 .skills-border{
   height:100%;
-  width:80%;
+  width:70%;
   float:left;
   margin-left:2%;
   margin:right:5%;
@@ -1627,6 +1627,12 @@ article > h3{
     height:70px;
     margin-bottom:0.5%;
   }
+  .skills-border{
+    height:100%;
+    width:70%;
+    float:left;
+    margin-left:2%;
+  }
   .skill-letter{
     font-size:23px;
   }
@@ -1645,7 +1651,7 @@ article > h3{
     padding-top:14%;
     padding-left:50px;
     padding-right:0px;
-    width:300px;
+    width:110%;
   }
 
 }
