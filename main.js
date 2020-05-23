@@ -25,11 +25,18 @@ const tittle_of_project2=document.querySelector(".tittle.no2");
 const tittle_of_project3=document.querySelector(".tittle.no3");
 const tittle_of_project4=document.querySelector(".tittle.no4");
 const tittle_of_project5=document.querySelector(".tittle.no5");
+
 const img_img1=document.querySelector(".class-of-image1");
 const img_img2=document.querySelector(".class-of-image2");
 const img_img3=document.querySelector(".class-of-image3");
 const img_img4=document.querySelector(".class-of-image4");
 const img_img5=document.querySelector(".class-of-image5");
+const img_img6=document.querySelector(".class-of-image6");
+const img_img7=document.querySelector(".class-of-image7");
+const img_img8=document.querySelector(".class-of-image8");
+const img_img9=document.querySelector(".class-of-image9");
+const img_img10=document.querySelector(".class-of-image10");
+
 const h1_tittle1=document.getElementById("id-tittle1");
 const h1_tittle2=document.getElementById("id-tittle2");
 const h1_tittle3=document.getElementById("id-tittle3");
@@ -145,7 +152,6 @@ document.getElementById("id-name").onkeypress = function(e) {
         return false;
 };
 
-var stop_it=about_moving();
 
 function changing_color_of_about(){
   tl_color=new TimelineMax({repeat:-1, repeatDelay:10});
@@ -384,6 +390,12 @@ function arrow_right_animation(){
 
 
 
+function about_moving(){
+  tl_repeat.fromTo(div_about,35,{x:0,y:0},{x:-60,y:30});
+  tl_repeat.fromTo(div_about,35,{x:-60,y:30},{x:0,y:0});
+
+};
+
 
 foreign_button_pokaz.addEventListener('click',() =>{
   if(div_pokaz_projekty_all.classList.contains("showed")){
@@ -573,22 +585,22 @@ div_ico_arrow2.addEventListener('click', function (div_ico_arrow2){
 
     else if(img_img5.classList.contains("active")){
       currently=true;
-      const tl55=new TimelineMax();
-      const tl44=new TimelineMax();
+      const tl55mob=new TimelineMax();
+      const tl44mob=new TimelineMax();
 
-      tl55.to("#xy5",1,{opacity:0});
-      tl55.to(h1_tittle5,1,{opacity:0},"-=1");
+      tl55mob.to("#xy5",1,{opacity:0});
+      tl55mob.to(h1_tittle5,1,{opacity:0},"-=1");
 
       img_img5.classList.remove("active")
       tittle_of_project5.classList.remove("active")
       img_img1.classList.add("active")
       tittle_of_project1.classList.add("active")
 
-      tl44.to("#xy1",1,{opacity:1,delay:1});
-      tl44.to(h1_tittle1,1,{opacity:1,delay:1},"-=1.5");
+      tl44mob.to("#xy1",1,{opacity:1,delay:1});
+      tl44mob.to(h1_tittle1,1,{opacity:1,delay:1},"-=1.5");
 
-      tl44.to("#id-tittle-of-project",0,{y:60},"-=1")
-      tl44.to("#id-tittle-of-project",1,{y:25},"-=1")
+      tl44mob.to("#id-tittle-of-project",0,{y:60},"-=1")
+      tl44mob.to("#id-tittle-of-project",1,{y:25},"-=1")
     }
     setTimeout(()=> {currently=false;},2000);
   }
