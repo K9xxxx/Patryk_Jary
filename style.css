@@ -496,7 +496,7 @@ article > h3{
 }
 .skills-all-content{
   height:100%;
-  width:90%;
+  width:100%;
   padding-top:5%;
   padding-bottom:5%;
   opacity:0;
@@ -1616,7 +1616,37 @@ article > h3{
   #top-side ,#right-side ,#bottom-side ,#left-side{
     display:none;
   }
+  .skills-banner{
+    height:700px;
+    width:5%;
+    margin:0% 0% 5% 50px;
+    float:left;
+  }
+  .skill{
+    width:85%;
+    height:70px;
+    margin-bottom:0.5%;
+  }
+  .skill-letter{
+    font-size:23px;
+  }
 
+  .my-skill-border{
+    width:100%;
+    height:11px;
+  }
+  .skill.left.rwd .my-skill-border{
+    height:11px;
+  }
+
+  .my-skills{
+    height:700px;
+    float:left;
+    padding-top:14%;
+    padding-left:50px;
+    padding-right:0px;
+    width:300px;
+  }
 
 }
 
