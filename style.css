@@ -715,6 +715,7 @@ background:linear-gradient(to right,hsla(180,100%,50%,0.01),hsla(180,100%,50%,0.
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   outline:none;
+  font-family: 'Michroma', sans-serif;
 }
 .name-box input:focus~ label,
 .name-box input:valid~ label,
@@ -749,7 +750,7 @@ select:-webkit-autofill:focus {
   color:#fff;
   pointer-events: none;
   transition:.5s;
-  font-family: 'Raleway Dots', cursive;
+  font-family: 'Michroma', sans-serif;
   font-weight: 700;
 }
 .mail-box>label{
@@ -761,7 +762,7 @@ select:-webkit-autofill:focus {
   color:white;
   pointer-events: none;
   transition:.5s;
-  font-family: 'Raleway Dots', cursive;
+  font-family: 'Michroma', sans-serif;
   font-weight: 700;
 }
 .mail-box{
@@ -777,7 +778,7 @@ select:-webkit-autofill:focus {
 .message-box>label{
   font-size:19px;
   color:white;
-  font-family: 'Raleway Dots', cursive;
+  font-family: 'Michroma', sans-serif;
   font-weight: 700;
 }
 .contact-box form a{
@@ -1043,15 +1044,42 @@ article > h3{
   height:15px;
 }
 
+.contact-banner{
+  text-align: center;
+  font-size:60px;
+  color:cyan;
+  margin-bottom:5%;
+  letter-spacing: 5px;
+  text-shadow:0 0 12px cyan;
+  font-family: 'Akronim', sans-serif;
+  font-weight:200;
+  user-select: none;
+}
+.name-box{
+  width:50%;
+  text-align:left;
+  margin-left:30%;
+  position:relative;
+}
+.mail-box{
+  position:relative;
+  width:50%;
+  text-align:left;
+  margin-left:30%;
+}
+.message-box{
+  position:relative;
+}
+
 
 }
 @media only screen and (max-width: 1215px) and (max-height: 640px) {
   .more-about{
-    height:900px;
+    height:1050px;
   }
 
 .more-about-active{
-    height: 1400px;
+    height: 1500px;
   }
 }
 
@@ -1354,11 +1382,11 @@ article > h3{
   }
 
   .more-about{
-    height:1050px;
+    height:1125px;
   }
 
   .more-about-active{
-    height: 1475px;
+    height: 1550px;
   }
 
   .info-about-me{
@@ -1546,7 +1574,7 @@ article > h3{
   }
 
   .more-about-active{
-    height: 1600px;
+    height: 1650px;
   }
 
 
@@ -1693,11 +1721,11 @@ article > h3{
   }
 
   .more-about{
-    height:1175px;
+    height:1325px;
   }
 
   .more-about-active{
-    height: 1700px;
+    height: 1800px;
   }
 
 
@@ -1728,7 +1756,7 @@ article > h3{
   }
 
   .pokaz-projekty-all{
-    margin-top:142%;
+    margin-top:144%;
     margin-left:0%;
     margin-right:0%;
     height:90vh;
@@ -1775,6 +1803,62 @@ article > h3{
   }
   #top-side ,#right-side ,#bottom-side ,#left-side{
     display:none;
+  }
+
+  .contact-banner{
+    text-align: center;
+    font-size:40px;
+    color:cyan;
+    margin-bottom:5%;
+    letter-spacing: 5px;
+    text-shadow:0 0 12px cyan;
+    font-family: 'Akronim', sans-serif;
+    font-weight:200;
+    user-select: none;
+  }
+  .name-box{
+    width:80%;
+    text-align:left;
+    margin-left:10%;
+    position:relative;
+  }
+  .mail-box{
+    position:relative;
+    width:80%;
+    text-align:left;
+    margin-left:10%;
+  }
+  .message-box{
+    position:relative;
+  }
+  .message-box>textarea{
+    width:110%;
+    margin-left:-5%;
+  }
+
+  .name-box>input{
+    width:100%;
+    padding:13px 0;
+    font-size:19px;
+    color:white;
+    margin-bottom:15px;
+    border:none;
+    border-bottom:1px solid #fff;
+    border-right-color: #fff;
+    border-bottom-right-radius: 5px;
+
+  }
+  .mail-box>input{
+    width:100%;
+    padding:13px 0;
+    font-size:19px;
+    border:none;
+    border-bottom:1px solid #fff;
+    border-right-color: #fff;
+    border-bottom-right-radius: 5px;
+    border-top:none;
+    border-left:none;
+    border-right:none;
   }
 
 }
@@ -1924,6 +2008,50 @@ article > h3{
   }
   #top-side ,#right-side ,#bottom-side ,#left-side{
     display:none;
+  }
+
+  .skills-banner{
+    height:700px;
+    width:5%;
+    margin:0% 0% 5% 50px;
+    float:left;
+  }
+  .skill{
+    width:85%;
+    height:70px;
+    margin-bottom:0.5%;
+  }
+  .skills-border{
+    height:100%;
+    width:70%;
+    float:left;
+    margin-left:2%;
+  }
+  .skill-letter{
+    font-size:20px;
+  }
+
+  .my-skill-border{
+    width:100%;
+    height:9px;
+  }
+  .skill.left.rwd .my-skill-border{
+    height:9px;
+  }
+
+  .my-skills{
+    height:700px;
+    float:left;
+    padding-top:14%;
+    padding-left:50px;
+    padding-right:0px;
+    width:110%;
+  }
+  .over-border-div>h4{
+    font-size:21px;
+  }
+  .skill.left.rwd .over-border-div>h4{
+    font-size:21px;
   }
 }
 

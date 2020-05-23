@@ -244,13 +244,13 @@ function border_sliding(){
   bord_slid_tl.to(border_percentage[6],2,{transformOrigin:"left",scaleX:1},"sliding")
   bord_slid_tl.fromTo(over_border[6],2,{x:-70},{x:0,opacity:1,ease: Elastic.easeOut.config(0.5, 0.3)},"-=2")
 
-  percentage_tl.fromTo(percentage[0],2,{color:"hsla(180,100%,50%,0.8)",y:15},{delay:1.85,opacity:1,color:"green ",y:39})
-  percentage_tl.fromTo(percentage[1],2,{color:"hsla(180,100%,50%,0.9)",y:15},{opacity:1,color:"green ",y:39},"-=1.65")
-  percentage_tl.fromTo(percentage[2],2,{color:"hsla(180,100%,50%,0.9)",y:15},{opacity:1,color:"green ",y:39},"-=1.65")
-  percentage_tl.fromTo(percentage[3],2,{color:"hsla(180,100%,50%,0.7)",y:15},{opacity:1,color:"green ",y:39},"-=1.65")
-  percentage_tl.fromTo(percentage[4],2,{color:"hsla(180,100%,50%,1)",y:15},{opacity:1,color:"green ",y:39},"-=1.65")
-  percentage_tl.fromTo(percentage[5],2,{color:"hsla(180,100%,50%,1)",y:15},{opacity:1,color:"green ",y:39},"-=1.65")
-  percentage_tl.fromTo(percentage[6],2,{color:"hsla(180,100%,50%,0.4)",y:15},{opacity:1,color:"green ",y:39},"-=1.65")
+  percentage_tl.fromTo(percentage[0],2,{color:"hsla(180,100%,50%,0.8)",y:15},{delay:1.85,opacity:1,color:"#bfff00",y:39})
+  percentage_tl.fromTo(percentage[1],2,{color:"hsla(180,100%,50%,0.9)",y:15},{opacity:1,color:"#5eff00",y:39},"-=1.65")
+  percentage_tl.fromTo(percentage[2],2,{color:"hsla(180,100%,50%,0.9)",y:15},{opacity:1,color:"#5eff00",y:39},"-=1.65")
+  percentage_tl.fromTo(percentage[3],2,{color:"hsla(180,100%,50%,0.7)",y:15},{opacity:1,color:"#bfff00",y:39},"-=1.65")
+  percentage_tl.fromTo(percentage[4],2,{color:"hsla(180,100%,50%,1)",y:15},{opacity:1,color:"#2bff00",y:39},"-=1.65")
+  percentage_tl.fromTo(percentage[5],2,{color:"hsla(180,100%,50%,1)",y:15},{opacity:1,color:"#2bff00",y:39},"-=1.65")
+  percentage_tl.fromTo(percentage[6],2,{color:"hsla(180,100%,50%,0.4)",y:15},{opacity:1,color:"#ff6f00",y:39},"-=1.65")
 }
 
 function pause_rotating(){
