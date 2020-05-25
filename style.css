@@ -493,19 +493,19 @@ article > h3{
 
 
 .skills{
-  height:100vh;
+  height:700px;
   background: hsl(0,0%,8%);
 }
 .skills-all-content{
   height:100%;
   width:100%;
   padding-top:5%;
-  padding-bottom:5%;
+  padding-bottom:0%;
   opacity:0;
   transform: translateY(100px);
 }
 .skills-banner{
-  height:700px;
+  height:500px;
   width:5%;
   margin:0% 0% 5% 7%;
   float:left;
@@ -654,7 +654,7 @@ background:linear-gradient(to right,hsla(180,100%,50%,0.01),hsla(180,100%,50%,0.
 .contact-all-content{
   width:65%;
   margin:0 auto;
-  padding-top:5%;
+  padding-top:0%;
 }
 
 .contact-banner{
@@ -2145,11 +2145,11 @@ article > h3{
   }
 
   .more-about{
-    height:1150px;
+    height:1250px;
   }
 
   .more-about-active{
-    height: 1675px;
+    height: 1875px;
   }
 
   .info-about-me{
