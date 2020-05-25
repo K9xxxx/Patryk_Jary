@@ -3,7 +3,9 @@
   padding: 0;
   box-sizing:border-box;
 }
-
+ html{
+   background-color: hsl(0,0%,8%);
+ }
 *::selection{
   color:forestgreen;
   background: black;
@@ -645,7 +647,7 @@ background:linear-gradient(to right,hsla(180,100%,50%,0.01),hsla(180,100%,50%,0.
 
 
 .contact-section{
-  height:130vh;
+  height:auto;
   background-color: hsl(0,0%,8%);
 }
 
@@ -2119,12 +2121,13 @@ article > h3{
     margin-top:2%;
   }
 
-  .desk{
+  .about.desk{
     width:70%;
     position:absolute;
     right:0 ;
     top:260px;
   }
+
   .about p{
     font-size:40px;
   }
@@ -2683,7 +2686,7 @@ article > h3{
     width:57%;
     position:absolute;
     right:0px;
-    top:400px;
+    top:510px;
   }
   .about.desk{
     display:none;
