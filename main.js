@@ -430,17 +430,6 @@ foreign_button_pokaz.addEventListener('click',() =>{
     tl.to(svg_main_file8,2,{rotate:15},"-=2");
 
 
-    tl.to(svg_line1,0,{opacity:1});
-    tl.to(svg_line1,1,{scaleX:1,transformOrigin:"left",ease: "none"});
-
-    tl.to(svg_line2,0,{opacity:1});
-    tl.to(svg_line2,1,{scaleY:1,transformOrigin:"top",ease: "none"});
-
-    tl.to(svg_line4,0,{opacity:1});
-    tl.to(svg_line4,1,{scaleX:1,transformOrigin:"left",ease: "none"});
-
-    tl.to(svg_line1,1,{scaleX:0,transformOrigin:"right",ease:"none"},"-=1")
-
     const tl1_rr=new TimelineMax();
     const tl2_rr=new TimelineMax();
     const tl3_rr=new TimelineMax();
@@ -459,16 +448,6 @@ foreign_button_pokaz.addEventListener('click',() =>{
     let circle8_rr=tl8_rr.to(svg_main_file8,1.9,{rotate:370,repeat:-1,ease: Power0.easeNone},"+=4.3");
 
     tl.addLabel("border","=+0.7");
-    tl.to(svg_line3,0,{opacity:1});
-    tl.to(svg_line3,1,{scaleX:1,transformOrigin:"left",ease: "none"});
-    tl.to(svg_line4,1,{scaleX:0,transformOrigin:"right",ease:"none"},"-=1");
-
-    tl.to(svg_line5,0,{opacity:1},"-=1");
-    tl.to(svg_line5,1,{scaleY:1,transformOrigin:"top",ease: "none"},"-=1");
-
-    tl.to(svg_line2,1,{scaleY:0,transformOrigin:"bottom",ease:"none"},"-=1");
-    tl.to(svg_line3,1,{scaleX:0,transformOrigin:"right",ease:"none"});
-    tl.to(svg_line5,1,{scaleY:0,transformOrigin:"bottom",ease:"none"},"-=1");
 
 
     tl.to(div_projects,0,{opacity:1},"border");
@@ -519,7 +498,7 @@ div_ico_arrow2.addEventListener('click', function (div_ico_arrow2){
       tl00.to("#xy2",1,{opacity:1,delay:1});
       tl00.to(h1_tittle2,1,{opacity:1,delay:1},"-=1.5");
 
-      tl00.to("#id-tittle-of-project",1,{y:-15},"-=1")
+      tl00.to("#id-tittle-of-project",1,{y:-25},"-=1")
     }
 
 
@@ -539,7 +518,7 @@ div_ico_arrow2.addEventListener('click', function (div_ico_arrow2){
       tl11.to("#xy3",1,{opacity:1,delay:1});
       tl11.to(h1_tittle3,1,{opacity:1,delay:1},"-=1.5");
 
-      tl11.to("#id-tittle-of-project",1,{y:-52},"-=1")
+      tl11.to("#id-tittle-of-project",1,{y:-75},"-=1")
     }
 
 
@@ -559,7 +538,7 @@ div_ico_arrow2.addEventListener('click', function (div_ico_arrow2){
       tl22.to("#xy4",1,{opacity:1,delay:1});
       tl22.to(h1_tittle4,1,{opacity:1,delay:1},"-=1.5");
 
-      tl22.to("#id-tittle-of-project",1,{y:-92},"-=1")
+      tl22.to("#id-tittle-of-project",1,{y:-125},"-=1")
     }
 
 
@@ -579,7 +558,7 @@ div_ico_arrow2.addEventListener('click', function (div_ico_arrow2){
       tl33.to("#xy5",1,{opacity:1,delay:1});
       tl33.to(h1_tittle5,1,{opacity:1,delay:1},"-=1.5");
 
-      tl33.to("#id-tittle-of-project",1,{y:-128},"-=1")
+      tl33.to("#id-tittle-of-project",1,{y:-170},"-=1")
     }
 
 
@@ -631,7 +610,7 @@ div_ico_arrow1.addEventListener('click',function (div_ico_arrow1){
       tl00.to(h1_tittle5,1,{opacity:1,delay:1},"-=1.5");
 
       tl00.to("#id-tittle-of-project",0,{y:-90},"-=1")
-      tl00.to("#id-tittle-of-project",1,{y:-128},"-=1")
+      tl00.to("#id-tittle-of-project",1,{y:-170},"-=1")
     }
 
 
@@ -675,7 +654,7 @@ div_ico_arrow1.addEventListener('click',function (div_ico_arrow1){
       tl22.to(h1_tittle2,1,{opacity:1,delay:1},"-=1.5");
 
       tl22.to("#id-tittle-of-project",0,{y:20},"-=1")
-      tl22.to("#id-tittle-of-project",1,{y:-15},"-=1")
+      tl22.to("#id-tittle-of-project",1,{y:-25},"-=1")
     }
 
 
@@ -696,7 +675,7 @@ div_ico_arrow1.addEventListener('click',function (div_ico_arrow1){
       tl33.to(h1_tittle3,1,{opacity:1,delay:1},"-=1.5");
 
       tl33.to("#id-tittle-of-project",0,{y:-20},"-=1")
-      tl33.to("#id-tittle-of-project",1,{y:-52},"-=1")
+      tl33.to("#id-tittle-of-project",1,{y:-70},"-=1")
     }
 
 
@@ -717,7 +696,7 @@ div_ico_arrow1.addEventListener('click',function (div_ico_arrow1){
       tl44.to(h1_tittle4,1,{opacity:1,delay:1},"-=1.5");
 
       tl44.to("#id-tittle-of-project",0,{y:-60},"-=1")
-      tl44.to("#id-tittle-of-project",1,{y:-92},"-=1")
+      tl44.to("#id-tittle-of-project",1,{y:-125},"-=1")
     }
     setTimeout(()=> {currently=false;},2000);
   }

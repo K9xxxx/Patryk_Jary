@@ -104,13 +104,13 @@ body{
 
 /* Secound Section */
 .more-about{
-  height:120vh;
+  height:1050px;
   background-color: hsl(0,0%,8%);
   overflow: hidden;
 }
 
 .more-about-active{
-    height: 185vh;
+    height: 1500px;
     transition: height 5s ease-in;
 }
 
@@ -183,10 +183,11 @@ article > h3{
   color:hsl(0,0%,95%);
   margin:0 0 30px -70px;
   text-shadow: 5px 5px 3px black;
+  font-family: 'Kanit', sans-serif;
 }
 
 .pokaz-projekty-all{
-  margin-top:25%;
+  margin-top:35%;
   margin-left:5%;
   margin-right:5%;
   position:relative;
@@ -415,6 +416,8 @@ article > h3{
   font-size:33px;
   letter-spacing: 2px;
   opacity:0;
+  font-family: 'Kanit', sans-serif;
+  font-weight:400;
 }
 
 .img-of-project{
@@ -716,7 +719,7 @@ background:linear-gradient(to right,hsla(180,100%,50%,0.01),hsla(180,100%,50%,0.
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   outline:none;
-  font-family: 'Michroma', sans-serif;
+  font-family: 'Kanit', sans-serif;
 }
 .name-box input:focus~ label,
 .name-box input:valid~ label,
@@ -751,7 +754,7 @@ select:-webkit-autofill:focus {
   color:#fff;
   pointer-events: none;
   transition:.5s;
-  font-family: 'Michroma', sans-serif;
+  font-family: 'Kanit', sans-serif;
   font-weight: 700;
 }
 .mail-box>label{
@@ -763,7 +766,7 @@ select:-webkit-autofill:focus {
   color:white;
   pointer-events: none;
   transition:.5s;
-  font-family: 'Michroma', sans-serif;
+  font-family: 'Kanit', sans-serif;
   font-weight: 700;
 }
 .mail-box{
@@ -779,7 +782,7 @@ select:-webkit-autofill:focus {
 .message-box>label{
   font-size:19px;
   color:white;
-  font-family: 'Michroma', sans-serif;
+  font-family: 'Kanit', sans-serif;
   font-weight: 700;
 }
 .contact-box form a{
@@ -2019,7 +2022,7 @@ article > h3{
   }
 
   .pokaz-projekty-all{
-    margin-top:144%;
+    margin-top:147%;
     margin-left:0%;
     margin-right:0%;
     height:90vh;
@@ -2064,8 +2067,35 @@ article > h3{
     position:relative;
     transform:scale(0.9);
   }
+
   #top-side ,#right-side ,#bottom-side ,#left-side{
     display:none;
+  }
+
+  .div-arrows{
+    margin-bottom:-20px;
+  }
+  .background-arrow{
+    width:11em;
+  }
+  .left-arrow{
+    height:3.3em;
+    width:3.3em;
+    margin-right:10%;
+  }
+  .right-arrow{
+    height:3.3em;
+    width:3.3em;
+  }
+  .icofont-arrow-left{
+    font-size:42px;
+    top:2px;
+    left:2px;
+  }
+  .icofont-arrow-right{
+    font-size:42px;
+    top:2px;
+    left:2px;
   }
 
   .contact-banner{
