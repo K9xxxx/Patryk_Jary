@@ -283,7 +283,7 @@ article > h3{
 #svg-circ-8 {
   z-index: 5;
   fill: none;
-  stroke: hsl(0, 0%,80%);
+  stroke: hsl(0, 0%,30%);
   stroke-width: 2;
   stroke-dasharray: 7.6%;
   position:absolute;
@@ -302,18 +302,14 @@ article > h3{
   opacity:1;
 }
 
-.button-pokaz-projekty{
-  min-height:600px;
-  width: 900px;
-  z-index:9;
-  user-select: none;
-}
 .pokaz-projekty{
   padding: 18px 4px;
+  text-align:center;
   border:none;
-  border-radius:100%;
+  border-radius:0%;
   margin-top:61px;
-  margin-left:61px;
+  width:90px;
+  margin-left:55px;
   z-index:99;
   color:cyan;
   font-weight:bold;
@@ -326,6 +322,9 @@ article > h3{
   user-select: none;
   cursor: pointer;
   box-shadow: 0 0 10px hsl(0,0%,8%);
+}
+.pokaz-projekty > p{
+  z-index:99;
 }
 .pokaz-projekty:hover{
   animation:pokaz-projekty-animation 2s forwards;
@@ -2122,6 +2121,14 @@ article > h3{
   }
 
   .about.desk{
+    width:70%;
+    position:absolute;
+    right:0 ;
+    top:260px;
+    display:none;
+  }
+
+  .about.mob{
     width:70%;
     position:absolute;
     right:0 ;
