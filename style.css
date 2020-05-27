@@ -744,6 +744,7 @@ select:-webkit-autofill:focus {
   -webkit-text-fill-color: white;
   -webkit-background-fill-color: red;
   -webkit-box-shadow: 0 0 0px 1000px hsl(0,0%,8%)  inset;
+  background: transparent;
 }
 .name-box>label{
   position:absolute;

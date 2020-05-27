@@ -148,7 +148,7 @@ $("#validate").on("click", validate);
 
 document.getElementById("id-name").onkeypress = function(e) {
     var chr = String.fromCharCode(e.which);
-    if ("qwertyuiopasdfghjklzxcvbnmąęłóśżźćńQWERTYUIOPASDFGHJKLZXCVBNMĄĘÓŚŁŻŹĆŃ".indexOf(chr) < 0)
+    if ("qwertyuiopasdfghjklzxcvbnmąęłóśżźćńQWERTYUIOPASDFGHJKLZXCVBNMĄĘÓŚŁŻŹĆŃ ".indexOf(chr) < 0)
         return false;
 };
 
