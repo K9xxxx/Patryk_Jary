@@ -187,7 +187,7 @@ article > h3{
 }
 
 .pokaz-projekty-all{
-  margin-top:35%;
+  margin-top:450px;
   margin-left:5%;
   margin-right:5%;
   position:relative;
@@ -686,13 +686,13 @@ background:linear-gradient(to right,hsla(180,100%,50%,0.01),hsla(180,100%,50%,0.
   padding:13px 0;
   font-size:19px;
   color:white;
-  margin-bottom:15px;
   border:none;
+  margin-bottom:15px;
   border-bottom:1px solid #fff;
   border-right-color: #fff;
   border-bottom-right-radius: 5px;
   outline:none;
-  background:transparent;
+  background:hsla(0,0%,8%,0);
 }
 .mail-box>input{
   width:100%;
@@ -700,12 +700,11 @@ background:linear-gradient(to right,hsla(180,100%,50%,0.01),hsla(180,100%,50%,0.
   font-size:19px;
   color:white;
   margin-bottom:15px;
-  border:none;
   border-bottom:1px solid #fff;
   border-right-color: #fff;
   border-bottom-right-radius: 5px;
   outline:none;
-  background:transparent;
+  background:hsla(0,0%,8%,0);
 }
 
 
@@ -716,6 +715,7 @@ background:linear-gradient(to right,hsla(180,100%,50%,0.01),hsla(180,100%,50%,0.
   color:#fff;
   margin-bottom:15px;
   background: hsl(0,0%,15%);
+  border:none;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   outline:none;
@@ -906,6 +906,187 @@ select:-webkit-autofill:focus {
   .third{
     float:right;
     margin-right: 5%;
+  }
+  .presentation{
+    min-height:750px;
+  }
+
+  .more-about{
+    height:1150px;
+  }
+
+  .more-about-active{
+    height: 1500px;
+  }
+
+  .info-about-me{
+    margin:5% 0 0 10%;
+    width:61%;
+    -webkit-background-size:95px;
+    background-size:95px;
+  }
+
+  .about-websites{
+    margin: 5% 5% 0 0;
+    width:61%;
+    -webkit-background-size:95px;
+    background-size:95px;
+  }
+
+  article > p{
+    font-size:22px;
+  }
+
+  article > h3{
+    font-size:42px;
+    margin:0 0 30px -70px;
+  }
+
+  .pokaz-projekty-all{
+    margin-top:42%;
+    margin-left:5%;
+    margin-right:5%;
+    height:90vh;
+  }
+
+  .only-svgs{
+    position:absolute;
+    top:-125px;
+    left:0px;
+  }
+
+  #projects{
+    width:80%;
+    margin-left:22%;
+    margin-top:15%;
+  }
+  #square{
+    position:relative;
+  }
+  .skills{
+    height:900px;
+  }
+  .skills-all-content{
+    height:100%;
+    width:100%;
+    padding-top:5%;
+    padding-bottom:5%;
+  }
+  .skills-banner{
+    height:700px;
+    width:5%;
+    margin:0% 0% 5% 7%;
+    float:left;
+  }
+  .skills-banner-letter{
+    font-size:70px;
+    line-height: 160%;
+  }
+
+  .skills-border{
+    height:100%;
+    width:70%;
+    float:left;
+    margin-left:2%;
+    margin:right:5%;
+  }
+  .skill{
+    width:65%;
+    height:70px;
+    margin-bottom:0.5%;
+  }
+  .my-skills{
+    height:700px;
+    width:100%;
+    padding:2% 10%;
+  }
+  .skill-letter{
+    font-size:24px;
+  }
+  .skill-letter.rwd{
+    font-size:230%;
+    line-height:0%;
+    font-size:24px;
+  }
+  .skill.left.rwd{
+    height:140px;
+    font-size:70%;
+  }
+  .skill.left.rwd .my-skill-border{
+    height:15px;
+  }
+  .my-skill-border{
+    width:100%;
+    height:15px;
+  }
+
+  .contact-section{
+    height:900px;
+  }
+  .contact-banner{
+    text-align: center;
+    font-size:60px;
+    color:cyan;
+    margin-bottom:5%;
+    letter-spacing: 5px;
+    text-shadow:0 0 12px cyan;
+    font-family: 'Akronim', sans-serif;
+    font-weight:200;
+    user-select: none;
+  }
+  .name-box{
+    width:50%;
+    text-align:left;
+    margin-left:30%;
+    position:relative;
+  }
+  .mail-box{
+    position:relative;
+    width:50%;
+    text-align:left;
+    margin-left:30%;
+  }
+  .message-box{
+    position:relative;
+  }
+  .contact-banner{
+    font-size:40px;
+    margin-bottom:5%;
+    letter-spacing: 5px;
+  }
+  .name-box{
+    width:100%;
+    margin-left:15%;
+  }
+  .mail-box{
+    width:100%;
+    margin-left:15%;
+  }
+  .message-box>textarea{
+    width:110%;
+    margin-left:-5%;
+  }
+
+  .name-box>input{
+    width:65%;
+    padding:13px 0;
+    font-size:19px;
+    margin-bottom:15px;
+
+  }
+  .mail-box>input{
+    width:65%;
+    padding:13px 0;
+    font-size:19px;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+  }
+
+  .contact-box form a{
+    padding:20px 70px;
+    font-size:19px;
+    margin-top:2%;
   }
 }
 
