@@ -151,8 +151,6 @@ document.getElementById("id-name").onkeypress = function(e) {
     if ("qwertyuiopasdfghjklzxcvbnmąęłóśżźćńQWERTYUIOPASDFGHJKLZXCVBNMĄĘÓŚŁŻŹĆŃ ".indexOf(chr) < 0)
         return false;
 };
-tl_contact=new TimelineMax();
-tl_contact.to('#id-name',0,{backgroundColor:"hsl(0,0%,0%)"})
 
 
 function changing_color_of_about(){

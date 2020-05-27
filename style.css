@@ -680,6 +680,7 @@ background:linear-gradient(to right,hsla(180,100%,50%,0.01),hsla(180,100%,50%,0.
   text-align:left;
   margin-left:30%;
   position:relative;
+  background-color: hsl(0,0%,8%);
 }
 .name-box>input{
   width:100%;
@@ -700,10 +701,10 @@ background:linear-gradient(to right,hsla(180,100%,50%,0.01),hsla(180,100%,50%,0.
   font-size:19px;
   color:white;
   margin-bottom:15px;
+  border:none;
   border-bottom:1px solid #fff;
   border-right-color: #fff;
   border-bottom-right-radius: 5px;
-  border:none;
   outline:none;
   background-color:hsl(0,0%,8%);
 }
@@ -745,7 +746,6 @@ select:-webkit-autofill:focus {
   -webkit-text-fill-color: white;
   -webkit-background-fill-color: red;
   -webkit-box-shadow: 0 0 0px 1000px hsl(0,0%,8%)  inset;
-  border:1px solid cyan;
 }
 .name-box>label{
   position:absolute;
