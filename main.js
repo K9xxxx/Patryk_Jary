@@ -56,6 +56,7 @@ let letters=document.querySelectorAll(".letter");
 let letters_web=document.querySelectorAll(".letter.web");
 
 
+
 const tl=new TimelineMax();
 const tl_repeat=new TimelineMax({repeat:-1});
 const tm= TweenMax;

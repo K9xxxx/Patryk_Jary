@@ -5,7 +5,7 @@
 }
  html{
    background-color: hsl(0,0%,8%);
- }
+}
 *::selection{
   color:forestgreen;
   background: black;
@@ -24,6 +24,46 @@ body{
   position:relative;
   user-select:none;
   display:inline-block;
+}
+
+.language-container{
+  position:absolute;
+  top:0;
+  right:10%;
+  padding:30px;
+  color:white;
+}
+.check{
+  position:relative;
+  width:50px;
+}
+.check:before{
+  content:'';
+  position:absolute;
+  width:50px;
+  height:25px;
+  background:gray;
+  border-radius: 25px;
+}
+.check:checked:before{
+  background:cyan;
+}
+
+.check:after{
+  content:'';
+  position:absolute;
+  left:0px;
+  width:25px;
+  height:25px;
+  background:gray;
+  border-radius: 25px;
+  transition:.25s;
+  border:2px solid white;
+  box-sizing:border-box;
+}
+.check:checked:after{
+  left:25px;
+  border:2px solid cyan;
 }
 
 .logoPJ svg{
@@ -742,7 +782,7 @@ textarea:-webkit-autofill:hover,
 textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
-select:-webkit-autofill:focus {
+select:-webkit-autofill:focus{
   -webkit-text-fill-color: white;
   -webkit-background-fill-color: red;
   -webkit-box-shadow: 0 0 0px 1000px hsl(0,0%,8%)  inset;
