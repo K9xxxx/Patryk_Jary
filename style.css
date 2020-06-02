@@ -29,7 +29,7 @@ body{
 .languages{
   position:absolute;
   top:0;
-  right:10%;
+  left:0%;
   height:25px;
   width:110px;
   background: hsla(0,0%,8%,0.2);
@@ -75,7 +75,7 @@ body{
 .logoPJ svg{
   height:50%;
   width:50%;
-  margin-top: 0;
+  margin-top: 50px;
 }
 .about{
   width:50%;
@@ -942,7 +942,7 @@ select:-webkit-autofill:focus{
   .logoPJ svg{
     height:50%;
     width:50%;
-    margin-top:0;
+    margin-top:50px;
   }
   .about p{
     font-size:50px;
@@ -1142,7 +1142,7 @@ select:-webkit-autofill:focus{
   .logoPJ svg{
     height:50%;
     width:50%;
-    margin-top:2%;
+    margin-top:50px;
     margin-left:-4%;
   }
 
@@ -1358,7 +1358,7 @@ article > h3{
   .logoPJ svg{
     height:50%;
     width:50%;
-    margin-top:2%;
+    margin-top:50px;
   }
 
   .about{
@@ -1505,7 +1505,7 @@ article > h3{
   .logoPJ svg{
     height:50%;
     width:50%;
-    margin-top:2%;
+    margin-top:50px;
   }
 
   .desk{
@@ -1699,7 +1699,7 @@ article > h3{
     height:60%;
     width:60%;
     margin-left:20%;
-    margin-top:2%;
+    margin-top:50px;
   }
 
   .about{
@@ -1927,7 +1927,7 @@ article > h3{
     height:60%;
     width:60%;
     margin-left:20%;
-    margin-top:4%;
+    margin-top:50px;
   }
 
   .about{
@@ -2119,7 +2119,7 @@ article > h3{
     height:80%;
     width:80%;
     margin-left:10%;
-    margin-top:6%;
+    margin-top:50px;
   }
 
   .about.desk{
@@ -2342,7 +2342,7 @@ article > h3{
     height:80%;
     width:80%;
     margin-left:10%;
-    margin-top:6%;
+    margin-top:50px;
   }
 
   .about.desk{
@@ -2582,7 +2582,7 @@ article > h3{
       height:80%;
       width:80%;
       margin-left:10%;
-      margin-top:6%;
+      margin-top:50px;
     }
 
     .about.desk{
@@ -2812,7 +2812,7 @@ article > h3{
       height:80%;
       width:80%;
       margin-left:10%;
-      margin-top:6%;
+      margin-top:50px;
     }
 
     .about.desk{
