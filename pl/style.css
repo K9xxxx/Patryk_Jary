@@ -26,8 +26,50 @@ body{
   display:inline-block;
 }
 
-.languages>a{
-  padding:10px 10px;
+.languages{
+  position:absolute;
+  top:0;
+  right:10%;
+  height:25px;
+  width:110px;
+  background: hsla(0,0%,8%,0.2);
+  overflow: hidden;
+}
+
+.icofont-simple-down{
+  position:absolute;
+  right:0;
+  color:white;
+  font-size:20px;
+  padding:0px 3px;
+}
+.language-eng, .language-pl{
+  width:70%;
+  float:left;
+  margin-left:5px;
+}
+.language-eng a, .language-pl a{
+  color:hsl(0,0%,80%);
+  text-decoration: none;
+  font-weight: bold;
+  font-size:20px;
+}
+
+.language-pl a{
+  background-size: cover;
+}
+.language-eng a:hover{
+  background-image: url(../img/engflag.jpg);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.language-pl a:hover{
+  background-image: url(../img/plflag.jpg);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .logoPJ svg{
