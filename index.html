@@ -338,18 +338,14 @@
                     <span id="left-side"></span>
                     <div class="my-projects">
                       <div class="tittle-of-project" id="id-tittle-of-project">
-                        <h1 class="tittle no1 active"id="id-tittle1">Z-Coffee</h1>
-                        <h1 class="tittle no2"id="id-tittle2">BMW</h1>
-                        <h1 class="tittle no3"id="id-tittle3">APPLE</h1>
-                        <h1 class="tittle no4"id="id-tittle4"> MICROSOFT </h1>
-                        <h1 class="tittle no5"id="id-tittle5">GREENPEACE</h1>
+                        <h1 class="tittle no1 active"id="id-tittle1"><a target="_blank" rel="noopener noreferrer" href="https://k9xxxx.github.io/Z-Coffee/index.html">Z-Coffee</a></h1>
+                        <h1 class="tittle no2"id="id-tittle2">Creating..</h1>
+                        <h1 class="tittle no3"id="id-tittle3">Creating..</h1>
                       </div>
                       <div class="img-of-project desktop">
                           <img class=" class-of-image1 active" id="xy1" src="./img/z_coffee_img.png" alt="Z-Coffee">
-                          <img class=" class-of-image2" id="xy2" src="./img/bmw_img.png" alt="bmw">
-                          <img class=" class-of-image3" id="xy3" src="./img/apple_img.png" alt="apple">
-                          <img class=" class-of-image4" id="xy4" src="./img/microsoft_img.png" alt="microsoft">
-                          <img class=" class-of-image5" id="xy5" src="./img/greenpeace_img.png" alt="greenpeace">
+                          <img class=" class-of-image2" id="xy2" src="./img/w-budowie.jpg" alt="Strona w budowie">
+                          <img class=" class-of-image3" id="xy3" src="./img/w-budowie.jpg" alt=" strona w budowie">
                       </div>
                       <div class="div-arrows">
                         <div class="background-arrow">
@@ -454,30 +450,30 @@
           </div>
           <div id="id-contact-box"  class="contact-box">
 
-            <form method="POST" name="contactform">
+            <form method="post" name="contactform" action="mail.php">
 
               <div class="name-box">
-                <input id="id-name"   name="name"    required>
+                <input id="id-name" type="text"  name="name"    required/>
                 <label for="name" title="name">Name</label>
               </div>
 
               <div class="mail-box">
-                <input class="Validate" id="id-mail"  name="email" type="email" required>
+                <input class="Validate" id="id-mail"  name="email" type="text" required/>
                 <label  for="email" title="E-mail">E-mail</label>
                 <h2 id='result-neg'></h2>
               </div>
               <div class="message-box">
   							<label for="message" title="Message">Message</label>
   							<br>
-  							<textarea  name="body" rows="12" cols="100" min="5"></textarea>
+  							<textarea  name="message" rows="12" cols="100" min="5"></textarea>
   						</div>
-              <a id='validate' href="#id-contact" type="submit" name="submit" value="Send">
+              <div class="contact-button">
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
-                Send
-              </a>
+                <input id="validate" type="submit" name="submit" value="wyslij"/>
+              </div>
               <h2 id='result-pos'></h2>
             </form>
           </div>

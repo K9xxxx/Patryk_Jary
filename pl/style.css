@@ -352,7 +352,7 @@ article > h3{
 }
 
 .pokaz-projekty{
-  padding: 18px 4px;
+  padding: 11px 4px;
   text-align:center;
   border:none;
   border-radius:0%;
@@ -364,7 +364,7 @@ article > h3{
   font-weight:bold;
   background: transparent;
   text-shadow:0.5px 0.5px 15px white;
-  font-family: 'Fredericka the Great', cursive;
+  font-family: 'Kanit', sans-serif;
   font-weight: 500;
   letter-spacing:0.5px;
   font-size:18px;
@@ -418,7 +418,7 @@ article > h3{
   width:0px;
   height:0px;
   opacity:0;
-  background:linear-gradient(to right, white, white, white);
+  background:linear-gradient(to right, hsl(0,0%,80%), hsl(0,0%,80%), hsl(0,0%,80%));
 }
 #left-side{
   left:0;
@@ -460,12 +460,32 @@ article > h3{
   text-align: center;
 }
 .tittle-of-project h1{
-  color:white;
+  color:hsl(0,0%,80%);
   font-size:33px;
   letter-spacing: 2px;
   opacity:0;
   font-family: 'Kanit', sans-serif;
   font-weight:400;
+}
+.tittle-of-project a{
+  color:hsl(0,0%,80%);
+  text-decoration:none;
+}
+.tittle-of-project a:hover{
+  text-decoration:underline;
+  animation: ToPahover 1.5s forwards;
+}
+
+@keyframes ToPahover{
+
+  0%{
+    text-decoration-color:hsla(0,0%,80%,0);
+  }
+  50%,100%{
+    color:white;
+    opacity:1;
+    text-decoration-color:white;
+  }
 }
 
 .img-of-project{
@@ -847,7 +867,7 @@ select:-webkit-autofill:focus{
   transition: .5s;
   letter-spacing:4px;
   margin-top:2%;
-  font-family: 'Fredericka the Great', cursive;
+  font-family: 'Kanit', sans-serif;
   font-weight: 400;
 }
 .contact-box a:hover{

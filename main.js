@@ -75,7 +75,7 @@ const tl8=new TimelineMax();
 
 
 
-
+ // Animacje wysuwania kodów kraju doo zmiany jezyka strony
 langIco.addEventListener('click',()=>{
   const tllanguage=new TimelineMax();
     if(langIco.classList.contains("active")){
@@ -93,7 +93,7 @@ langIco.addEventListener('click',()=>{
       TweenLite.set(languagesDiv, {background:"linear-gradient(to left, hsl(0,0%,8%), hsl(0,0%,30%)",delay:0.25});
     }
 });
-
+// poczatkowy rotate okregow
 let circle1=tl1.to(svg_main_file1,2,{rotate:370,repeat:-1, ease: Power0.easeNone});
 let circle2=tl2.to(svg_main_file2,2.1,{rotate:-600,repeat:-1,ease: Power0.easeNone},"-=1");
 let circle3=tl3.to(svg_main_file3,2.5,{rotate:370,repeat:-1,ease: Power0.easeNone},"-=1");
@@ -105,7 +105,7 @@ let circle8=tl8.to(svg_main_file8,1.9,{rotate:370,repeat:-1,ease: Power0.easeNon
 
 
 
-
+// wszystkie animacje na scroolu
 let controller= new ScrollMagic.Controller();
 
 $('.scroll').each(function(){
@@ -146,11 +146,14 @@ let fifthScene= new ScrollMagic.Scene({
 .setClassToggle('#id-contact-box','fade-in')
 .addTo(controller);
 
+
+// sprawdzanie poprawnosci maila
 function validateEmail(email) {
   var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   return re.test(email);
 }
 
+// dodanie informacji o ewentualnym blednym mailu badz informacja o poprawnym wyslaniu formularza
 function validate() {
   var $result_pos = $("#result-pos");
   var $result_neg= $("#result-neg");
@@ -168,6 +171,7 @@ function validate() {
   return false;
 }
 
+// Wprowadzanie tylko okreslonych znakow w imieniu
 $("#validate").on("click", validate);
 
 document.getElementById("id-name").onkeypress = function(e) {
@@ -176,7 +180,7 @@ document.getElementById("id-name").onkeypress = function(e) {
         return false;
 };
 
-
+// zmiana kolorów w 1 sekcji prezentujacej
 function changing_color_of_about(){
   tl_color=new TimelineMax({repeat:-1, repeatDelay:10});
   tl_color.to(letters ,1,{delay:10,color:"cyan"})
@@ -186,6 +190,9 @@ function changing_color_of_about(){
   tl_color.to(letters_web ,1,{delay:20,color:"purple"})
   tl_color.to(letters_web ,1,{delay:10,color:"#808080"})
 }
+
+
+// animacja "odpalania sie swiatel" oraz zsuniecie sie literki L do dolu
 function banner_glowing(){
   tl_glowing=new TimelineMax();
   tl_glowingOP=new TimelineMax();
@@ -243,7 +250,7 @@ function banner_glowing(){
 
 }
 
-
+// wysuwanie sie obramowan z umiejetosciami  oraz wysuwanie sie procentów
 function border_sliding(){
   const bord_slid_tl=new TimelineMax();
   const percentage_tl=new TimelineMax();
@@ -276,7 +283,7 @@ function border_sliding(){
   percentage_tl.fromTo(percentage[5],2,{color:"hsla(180,100%,50%,1)",y:15},{opacity:1,color:"hsla(110, 100%, 50%,0.6)",y:39},"-=1.65")
   percentage_tl.fromTo(percentage[6],2,{color:"hsla(180,100%,50%,0.4)",y:15},{opacity:1,color:"hsla(26, 100%, 50%,0.6)",y:39},"-=1.65")
 }
-
+// zatrzymanie okregów po nacisnieciu
 function pause_rotating(){
     circle1.pause();
     circle2.pause();
@@ -288,26 +295,7 @@ function pause_rotating(){
     circle8.pause();
 }
 
-function resume_rotating(){
-  const tl1=new TimelineMax();
-  const tl2=new TimelineMax();
-  const tl3=new TimelineMax();
-  const tl4=new TimelineMax();
-  const tl5=new TimelineMax();
-  const tl6=new TimelineMax();
-  const tl7=new TimelineMax();
-  const tl8=new TimelineMax();
-  let circle1=tl1.to(svg_main_file1,2,{rotate:370,repeat:-1, ease: Power0.easeNone});
-  let circle2=tl2.to(svg_main_file2,2.1,{rotate:-600,repeat:-1,ease: Power0.easeNone},"-=1");
-  let circle3=tl3.to(svg_main_file3,2.5,{rotate:370,repeat:-1,ease: Power0.easeNone},"-=1");
-  let circle4=tl4.to(svg_main_file4,2.25,{rotate:-660,repeat:-1,ease: Power0.easeNone},"-=1.7");
-  let circle5=tl5.to(svg_main_file5,2.65,{rotate:370,repeat:-1,ease: Power0.easeNone},"-=0.5");
-  let circle6=tl6.to(svg_main_file6,2.3,{rotate:370,repeat:-1,ease: Power0.easeNone},"-=0.5");
-  let circle7=tl7.to(svg_main_file7,2.1,{rotate:370,repeat:-1,ease: Power0.easeNone},"-=0.5");
-  let circle8=tl8.to(svg_main_file8,1.9,{rotate:370,repeat:-1,ease: Power0.easeNone},"-=0.5");
-}
-
-
+// zmiana pozycji okregów pomiedzy soba  w trakcie rotacji
 function scaling_circle(){
   tl_svg=new TimelineMax({repeat:-1, repeatDelay:3});
   tl_svg.to(svg_main_file1,1.5,{scale:0.88,stroke:"white"});
@@ -384,9 +372,8 @@ function scaling_circle(){
 
 
 
-
+// animacje dla strzalek przy projektach
 function arrow_left_animation(){
-  //funkcja animacji strzalki muszaca sie miescic w 2 sekundach
   const tl= new TimelineMax();
   TweenLite.fromTo(div_ico_arrow1, 2, {css:{borderColor:"#b3b3b3"}},{css:{borderColor:"#666666"},yoyo:true});
   tl.fromTo(i_arrow_left,0.3,{x:0},{x:5});
@@ -412,15 +399,7 @@ function arrow_right_animation(){
   tl.to(div_ico_arrow1,0.5,{opacity:1},"-=0.8");
 }
 
-
-
-function about_moving(){
-  tl_repeat.fromTo(div_about,35,{x:0,y:0},{x:-60,y:30});
-  tl_repeat.fromTo(div_about,35,{x:-60,y:30},{x:0,y:0});
-
-};
-
-
+ // animacja przesuniecia sie okregów w dół, pokazania sie projektów oraz strzalek w nich
 foreign_button_pokaz.addEventListener('click',() =>{
   if(div_pokaz_projekty_all.classList.contains("showed")){
     return none;
@@ -488,7 +467,7 @@ foreign_button_pokaz.addEventListener('click',() =>{
     tl.fromTo("#right-side", 2,{height:0},{height: "100%",transformOrigin:"top"});
     tl.to("#bottom-side", 0,{opacity:1},"border");
     tl.fromTo("#bottom-side", 2,{width:0},{width: "100%",transformOrigin:"right"},"-=2");
-    TweenMax.to("#bottom-side", 3, {delay:8,backgroundImage:"linear-gradient(to right, white,#1a1a1a, white)", repeat:-1, yoyo:true, repeatDelay:0.2});
+    TweenMax.to("#bottom-side", 3, {delay:8,backgroundImage:"linear-gradient(to right, hsl(0,0%,80%),#1a1a1a, hsl(0,0%,80%))", repeat:-1, yoyo:true, repeatDelay:0.2});
     tl.to("#xy1",1,{opacity:1});
     tl.to("#id-tittle-of-project",1,{y:25},"-=1");
     tl.to(h1_tittle1,1,{opacity:1},"-=1");
@@ -500,6 +479,7 @@ foreign_button_pokaz.addEventListener('click',() =>{
 });
 
 
+// animacje przechodznia pomiedzy projektami( pierwsza w prawo )
 let currently = false;
 
 
@@ -556,54 +536,14 @@ div_ico_arrow2.addEventListener('click', function (div_ico_arrow2){
 
       img_img3.classList.remove("active")
       tittle_of_project3.classList.remove("active")
-      img_img4.classList.add("active")
-      tittle_of_project4.classList.add("active")
-
-      tl22.to("#xy4",1,{opacity:1,delay:1});
-      tl22.to(h1_tittle4,1,{opacity:1,delay:1},"-=1.5");
-
-      tl22.to("#id-tittle-of-project",1,{y:-125},"-=1")
-    }
-
-
-    else if(img_img4.classList.contains("active")){
-      currently=true;
-      const tl33=new TimelineMax();
-      const tl66=new TimelineMax();
-
-      tl66.to("#xy4",1,{opacity:0});
-      tl66.to(h1_tittle4,1,{opacity:0},"-=1.5");
-
-      img_img4.classList.remove("active")
-      tittle_of_project4.classList.remove("active")
-      img_img5.classList.add("active")
-      tittle_of_project5.classList.add("active")
-
-      tl33.to("#xy5",1,{opacity:1,delay:1});
-      tl33.to(h1_tittle5,1,{opacity:1,delay:1},"-=1.5");
-
-      tl33.to("#id-tittle-of-project",1,{y:-170},"-=1")
-    }
-
-
-    else if(img_img5.classList.contains("active")){
-      currently=true;
-      const tl55mob=new TimelineMax();
-      const tl44mob=new TimelineMax();
-
-      tl55mob.to("#xy5",1,{opacity:0});
-      tl55mob.to(h1_tittle5,1,{opacity:0},"-=1");
-
-      img_img5.classList.remove("active")
-      tittle_of_project5.classList.remove("active")
       img_img1.classList.add("active")
       tittle_of_project1.classList.add("active")
 
-      tl44mob.to("#xy1",1,{opacity:1,delay:1});
-      tl44mob.to(h1_tittle1,1,{opacity:1,delay:1},"-=1.5");
+      tl22.to("#xy1",1,{opacity:1,delay:1});
+      tl22.to(h1_tittle1,1,{opacity:1,delay:1},"-=1.5");
 
-      tl44mob.to("#id-tittle-of-project",0,{y:60},"-=1")
-      tl44mob.to("#id-tittle-of-project",1,{y:25},"-=1")
+      tl22.to("#id-tittle-of-project",0,{y:60},"-=1")
+      tl22.to("#id-tittle-of-project",1,{y:25},"-=1")
     }
     setTimeout(()=> {currently=false;},2000);
   }
@@ -627,14 +567,14 @@ div_ico_arrow1.addEventListener('click',function (div_ico_arrow1){
 
       img_img1.classList.remove("active")
       tittle_of_project1.classList.remove("active")
-      img_img5.classList.add("active")
-      tittle_of_project5.classList.add("active")
+      img_img3.classList.add("active")
+      tittle_of_project3.classList.add("active")
 
-      tl00.to("#xy5",1,{opacity:1,delay:1});
-      tl00.to(h1_tittle5,1,{opacity:1,delay:1},"-=1.5");
+      tl00.to("#xy3",1,{opacity:1,delay:1});
+      tl00.to(h1_tittle3,1,{opacity:1,delay:1},"-=1.5");
 
-      tl00.to("#id-tittle-of-project",0,{y:-90},"-=1")
-      tl00.to("#id-tittle-of-project",1,{y:-170},"-=1")
+      tl00.to("#id-tittle-of-project",0,{y:-20},"-=1")
+      tl00.to("#id-tittle-of-project",1,{y:-70},"-=1")
     }
 
 
@@ -679,48 +619,6 @@ div_ico_arrow1.addEventListener('click',function (div_ico_arrow1){
 
       tl22.to("#id-tittle-of-project",0,{y:20},"-=1")
       tl22.to("#id-tittle-of-project",1,{y:-25},"-=1")
-    }
-
-
-    else if(img_img4.classList.contains("active")){
-      currently=true;
-      const tl33=new TimelineMax();
-      const tl66=new TimelineMax();
-
-      tl66.to("#xy4",1,{opacity:0});
-      tl66.to(h1_tittle4,1,{opacity:0},"-=1");
-
-      img_img4.classList.remove("active")
-      tittle_of_project4.classList.remove("active")
-      img_img3.classList.add("active")
-      tittle_of_project3.classList.add("active")
-
-      tl33.to("#xy3",1,{opacity:1,delay:1});
-      tl33.to(h1_tittle3,1,{opacity:1,delay:1},"-=1.5");
-
-      tl33.to("#id-tittle-of-project",0,{y:-20},"-=1")
-      tl33.to("#id-tittle-of-project",1,{y:-70},"-=1")
-    }
-
-
-    else if(img_img5.classList.contains("active")){
-      currently=true;
-      const tl55=new TimelineMax();
-      const tl44=new TimelineMax();
-
-      tl55.to("#xy5",1,{opacity:0});
-      tl55.to(h1_tittle5,1,{opacity:0},"-=1");
-
-      img_img5.classList.remove("active")
-      tittle_of_project5.classList.remove("active")
-      img_img4.classList.add("active")
-      tittle_of_project4.classList.add("active")
-
-      tl44.to("#xy4",1,{opacity:1,delay:1});
-      tl44.to(h1_tittle4,1,{opacity:1,delay:1},"-=1.5");
-
-      tl44.to("#id-tittle-of-project",0,{y:-60},"-=1")
-      tl44.to("#id-tittle-of-project",1,{y:-125},"-=1")
     }
     setTimeout(()=> {currently=false;},2000);
   }

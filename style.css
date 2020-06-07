@@ -353,7 +353,7 @@ article > h3{
 }
 
 .pokaz-projekty{
-  padding: 18px 4px;
+  padding: 11px 4px;
   text-align:center;
   border:none;
   border-radius:0%;
@@ -365,7 +365,7 @@ article > h3{
   font-weight:bold;
   background: transparent;
   text-shadow:0.5px 0.5px 15px white;
-  font-family: 'Fredericka the Great', cursive;
+  font-family: 'Kanit', sans-serif;
   font-weight: 500;
   letter-spacing:0.5px;
   font-size:18px;
@@ -419,7 +419,7 @@ article > h3{
   width:0px;
   height:0px;
   opacity:0;
-  background:linear-gradient(to right, white, white, white);
+  background:linear-gradient(to right, hsl(0,0%,80%), hsl(0,0%,80%), hsl(0,0%,80%));
 }
 #left-side{
   left:0;
@@ -461,12 +461,33 @@ article > h3{
   text-align: center;
 }
 .tittle-of-project h1{
-  color:white;
+  color:hsl(0,0%,80%);
   font-size:33px;
   letter-spacing: 2px;
   opacity:0;
   font-family: 'Kanit', sans-serif;
   font-weight:400;
+}
+
+.tittle-of-project a{
+  color:hsl(0,0%,80%);
+  text-decoration:none;
+}
+.tittle-of-project a:hover{
+  text-decoration:underline;
+  animation: ToPahover 1.5s forwards;
+}
+
+@keyframes ToPahover{
+
+  0%{
+    text-decoration-color:hsla(0,0%,80%,0);
+  }
+  50%,100%{
+    color:white;
+    opacity:1;
+    text-decoration-color:white;
+  }
 }
 
 .img-of-project{
@@ -836,38 +857,43 @@ select:-webkit-autofill:focus{
   font-family: 'Kanit', sans-serif;
   font-weight: 700;
 }
-.contact-box form a{
-  position:relative;
+.contact-button{
   display:inline-block;
-  padding:20px 70px;
-  color:cyan;
-  font-size:19px;
-  text-decoration: none;
-  text-transform: uppercase;
+  position:relative;
   overflow:hidden;
   transition: .5s;
-  letter-spacing:4px;
-  margin-top:2%;
-  font-family: 'Fredericka the Great', cursive;
-  font-weight: 400;
+  border:none;
 }
-.contact-box a:hover{
-  background: cyan;
-  color: black;
-  font-weight:bold;
-  border-radius:5px;
+.contact-button:hover{
   box-shadow:0 0 5px cyan,
   0 0 25px cyan,
   0 0 50px cyan,
   0 0 100px cyan;
+}
+.contact-button input{
+  padding:20px 70px;
+  color:cyan;
+  background: transparent;
+  font-size:19px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing:4px;
+  font-family: 'Michroma', sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+}
+.contact-button input:hover{
+  background: cyan;
+  color: black;
+  font-weight:bold;
+  border-radius:5px;
   font-weight: 700;
 }
-
-.contact-box a span{
+.contact-button>span{
   position:absolute;
   display: block;
 }
-.contact-box a span:nth-child(1){
+.contact-button span:nth-child(1){
   top:0;
   left:-100%;
   width:100%;
@@ -885,7 +911,7 @@ select:-webkit-autofill:focus{
   }
 }
 
-.contact-box a span:nth-child(2){
+.contact-button span:nth-child(2){
   top:-100%;
   right:0%;
   width:2px;
@@ -904,7 +930,7 @@ select:-webkit-autofill:focus{
   }
 }
 
-.contact-box a span:nth-child(3){
+.contact-button span:nth-child(3){
   bottom:0;
   right:-100%;
   width:100%;
@@ -922,7 +948,7 @@ select:-webkit-autofill:focus{
     right:100%;
   }
 }
-.contact-box a span:nth-child(4){
+.contact-button span:nth-child(4){
   bottom:-100%;
   left:0;
   width:2px;
